@@ -2,6 +2,7 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 from utils import *
+from BoxHead import BoxHead
 
 class MaskHead(torch.nn.Module):
     def __init__(self,Classes=3,P=14, batch_size = 4):
